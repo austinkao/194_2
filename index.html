@@ -100,47 +100,53 @@
   
   
 
+      <h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 2.3: Gaussian and Laplacian Stacks"</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">
+  The goal of this part of the assignment is to implement Gaussian and Laplacian stacks, which are kind of like pyramids but without the downsampling. 
+  below are the example for suach stack 
+  </p>
+  
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="lincoln.jpg" alt=""height="350">&lt;image&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="stackll.jpg" alt=""height="350">&lt; Gaussian and Laplacian stacks&gt;</p>
+  
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="hybrid2.jpg" alt=""height="350">&lt;another image&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="stack.jpg" alt=""height="350">&lt; Gaussian and Laplacian stacks&gt;</p>
+  
+        <h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 2.4: Multiresolution Blending"</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">
+  The goal of this part of the assignment is to blend two images seamlessly using a multi resolution blending as described in the 1983 paper by Burt and Adelson.
+  where we will blend image at defferent fequrence to achieve a smooth blend
+  </p>
+  
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="orange.jpeg" alt=""height="350">&lt;image of orange&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="apple.jpeg" alt=""height="350">&lt; image of apple&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="mb.jpg" alt=""height="350">&lt;mask image&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="appleo.jpg" alt=""height="350">&lt; combined image&gt;</p>
+  
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="hand.png" alt=""height="350">&lt;image of hand&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="eye.png" alt=""height="350">&lt; image of eye&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="m3.png" alt=""height="350">&lt;mask image&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="handeye.jpg" alt=""height="350">&lt; combined image&gt;</p>
+  
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="b0.png" alt=""height="350">&lt;image of sathel gate&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="b1.png" alt=""height="350">&lt; image of sathel gate at different time&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="mb.jpg" alt=""height="350">&lt;mask image&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="sathel.jpg" alt=""height="350">&lt; combined image&gt;</p>
+  
+  
+      <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="sather_stack.jpg" alt=""height="350">&lt; Illustrate the process by applying your Laplacian stack&gt;</p>
+  
+  
+   <h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>the most important thing that i learned"</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">
+  I reallt enjoyed everypart of this project. I learned that This project is much longer than project 1 and that I should start the project early when the course staff said so.
+  </p>
   
   
   
   
-    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="b.png" alt=""height="350">&lt;blur the first image for testing&gt;</p>
-   <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="bs.png" alt=""height="350">&lt;use the method to sharp the image. as you can see It's not perfect but it partly recorvers the image&gt;</p>
 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
- <h2 class="code-line" data-line-start=10 data-line-end=11><a id="Approach_10"></a>Image "Sharpening"</h2>
-<p class="has-line-data" data-line-start="12" data-line-end="13">I fisrt divide the image into 3 parts. Than I aligned them by calculating the gradient in the Y axis and compared the image to find an offset that’s best fitted. multiscale paramid is also used to saved runtime when the image is too big.</p>
-<h2 class="code-line" data-line-start=14 data-line-end=15><a id="Image_14"></a>Image</h2>
-<p class="has-line-data" data-line-start="16" data-line-end="17"><img src="out_path/cathedral.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="18" data-line-end="19"><img src="out_path/castle.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="20" data-line-end="21"><img src="out_path/emir.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="22" data-line-end="23"><img src="out_path/icon.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="24" data-line-end="25"><img src="out_path/harvesters.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="26" data-line-end="27"><img src="out_path/lady.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="28" data-line-end="29"><img src="out_path/melons.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="30" data-line-end="31"><img src="out_path/monastery.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="32" data-line-end="33"><img src="out_path/onion.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="34" data-line-end="35"><img src="out_path/self_portrait.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="36" data-line-end="37"><img src="out_path/three_generations.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="38" data-line-end="39"><img src="out_path/tobolsk.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="40" data-line-end="41"><img src="out_path/train.jpg" alt=""height="350">&lt;br&gt;</p>
-<p class="has-line-data" data-line-start="42" data-line-end="45"><img src="out_path/workshop.jpg" alt=""height="350"><br>
-here is a image of my own choosing<br>
-<img src="out_path/extra.jpg" alt="">&lt;br&gt;</p>
-<h2 class="code-line" data-line-start=45 data-line-end=46><a id="bed_result_45"height="350"></a>bed result</h2>
-<p class="has-line-data" data-line-start="46" data-line-end="48"height="350">out of all the images, the only bad one is melons. <img src="out_path/melons.jpg" alt=""height="350">&lt;br&gt;<br>
-for some unknown reason. I think the most possible reason is that the displacement is high than other images. the image is later improved a little by searching over a wider range of pixels. <img src="out_path/melon.jpg" alt=""height="350">&lt;br&gt; but more improvement can still be made.   </p>
-<p class="has-line-data" data-line-start="49" data-line-end="53"height="350">##bells and whistles<br>
-instead of using the default equations for comparing image alignments. I used gradient which had shown to generate better results. In addation, while summing over the differences, only the middle 90% of the image were used as the some edges are damaged and will influence the results.<br>
-<img src="out_path/cathedral.jpg" alt=""height="350">&lt;br&gt;<br>
-<img src="out_path/bad.jpg" alt=""height="350">&lt;br&gt;</p>
+
 </body></html>
