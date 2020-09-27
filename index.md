@@ -25,6 +25,8 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 
+![Image](./handeye.jpg)
+
 ![Image](handeye.jpg)
 
 ```
