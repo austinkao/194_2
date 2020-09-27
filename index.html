@@ -1,1 +1,34 @@
 <h1>Helli</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>index.html.html</title><style></style></head><body id="preview">
+<h4 class="code-line" data-line-start=0 data-line-end=1><a id="CS19426_Project_1_0"></a>CS194-26 Project 1</h4>
+<h3 class="code-line" data-line-start=2 data-line-end=3><a id="Images_of_the_Russian_Empire_2"></a>Images of the Russian Empire</h3>
+<h2 class="code-line" data-line-start=4 data-line-end=5><a id="Austin_Kao_4"></a>Austin Kao</h2>
+<h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Overview</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">The goal of this assignment is to take the digitized Prokudin-Gorskii glass plate images and, using image processing techniques, automatically produce a color image with as few visual artifacts as possible. In order to do this, one will need to extract the three color channel images, place them on top of each other, and align them so that they form a single RGB color image.</p>
+<h2 class="code-line" data-line-start=10 data-line-end=11><a id="Approach_10"></a>Approach</h2>
+<p class="has-line-data" data-line-start="12" data-line-end="13">I fisrt divide the image into 3 parts. Than I aligned them by calculating the gradient in the Y axis and compared the image to find an offset that’s best fitted. multiscale paramid is also used to saved runtime when the image is too big.</p>
+<h2 class="code-line" data-line-start=14 data-line-end=15><a id="Image_14"></a>Image</h2>
+<p class="has-line-data" data-line-start="16" data-line-end="17"><img src="out_path/cathedral.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="18" data-line-end="19"><img src="out_path/castle.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="20" data-line-end="21"><img src="out_path/emir.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="22" data-line-end="23"><img src="out_path/icon.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="24" data-line-end="25"><img src="out_path/harvesters.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="26" data-line-end="27"><img src="out_path/lady.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="28" data-line-end="29"><img src="out_path/melons.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="30" data-line-end="31"><img src="out_path/monastery.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="32" data-line-end="33"><img src="out_path/onion.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="34" data-line-end="35"><img src="out_path/self_portrait.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="36" data-line-end="37"><img src="out_path/three_generations.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="38" data-line-end="39"><img src="out_path/tobolsk.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="40" data-line-end="41"><img src="out_path/train.jpg" alt=""height="350">&lt;br&gt;</p>
+<p class="has-line-data" data-line-start="42" data-line-end="45"><img src="out_path/workshop.jpg" alt=""height="350"><br>
+here is a image of my own choosing<br>
+<img src="out_path/extra.jpg" alt="">&lt;br&gt;</p>
+<h2 class="code-line" data-line-start=45 data-line-end=46><a id="bed_result_45"height="350"></a>bed result</h2>
+<p class="has-line-data" data-line-start="46" data-line-end="48"height="350">out of all the images, the only bad one is melons. <img src="out_path/melons.jpg" alt=""height="350">&lt;br&gt;<br>
+for some unknown reason. I think the most possible reason is that the displacement is high than other images. the image is later improved a little by searching over a wider range of pixels. <img src="out_path/melon.jpg" alt=""height="350">&lt;br&gt; but more improvement can still be made.   </p>
+<p class="has-line-data" data-line-start="49" data-line-end="53"height="350">##bells and whistles<br>
+instead of using the default equations for comparing image alignments. I used gradient which had shown to generate better results. In addation, while summing over the differences, only the middle 90% of the image were used as the some edges are damaged and will influence the results.<br>
+<img src="out_path/cathedral.jpg" alt=""height="350">&lt;br&gt;<br>
+<img src="out_path/bad.jpg" alt=""height="350">&lt;br&gt;</p>
+</body></html>
