@@ -4,14 +4,36 @@
 <h2 class="code-line" data-line-start=4 data-line-end=5><a id="Austin_Kao_4"></a>Austin Kao</h2>
   
   
-<h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 1: Fun with Filters</h2>
+<h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 1.1: Finite Difference Operator</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">
   In this section, we show the partial derivative in x and y of the cameraman image 
   by convolving the image with finite difference operators D_x and D_y
   </p>
   
   <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman.png" alt=""height="350">&lt;example image&gt;</p>
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_dx.jpg" alt=""height="350">&lt;dx&gt;</p>
+   <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_dy.jpg" alt=""height="350">&lt;dy&gt;</p>
+     <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_gr_be.jpg" alt=""height="350">&lt;gradient magnitude image&gt;</p>
+     <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_gr.jpg" alt=""height="350">&lt;gradient magnitude image binarized&gt;</p>
 
+  
+  
+  <h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 1.2: Derivative of Gaussian (DoG) Filter</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">
+  In this section, we can use a gaussian filter to smooth out the image before applying the partial derivative in x and y too get a better image 
+  </p>
+  
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="dx_f.png" alt=""height="350">&lt;combined gaussian x partial derivative filter&gt;</p>
+    <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="dy_f.png" alt=""height="350">&lt;combined gaussian y partial derivative filter&gt;</p>
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_dx2.jpg" alt=""height="350">&lt;smooth dx&gt;</p>
+   <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_dy2.jpg" alt=""height="350">&lt;smooth dy&gt;</p>
+     <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_gr_be2.jpg" alt=""height="350">&lt;smooth gradient magnitude image&gt;</p>
+     <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman_gr2.jpg" alt=""height="350">&lt;smooth gradient magnitude image binarized&gt;</p>
+
+  <p class="has-line-data" data-line-start="8" data-line-end="9">
+  also note that convolve the gaussian with D_x and D_y to form one combined filter will give us the same result vs applying the filters one by one
+  </p>
+  
   
   
  <h2 class="code-line" data-line-start=10 data-line-end=11><a id="Approach_10"></a>Approach</h2>
