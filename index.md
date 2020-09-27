@@ -30,9 +30,9 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 
-![Image](./handeye.jpg)
+![Image](https://github.com/austinkao/194_2/blob/master/nutmeg.jpg)
 
-![Image](handeye.jpg)
+![Image](https://github.com/austinkao/194_2/blob/master/nutmeg.jpg)
 
 ```
 
