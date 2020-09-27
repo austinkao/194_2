@@ -1,10 +1,20 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>index.html.html</title><style></style></head><body id="preview">
-<h4 class="code-line" data-line-start=0 data-line-end=1><a id="CS19426_Project_2_0"></a>CS194-26 Project 1</h4>
-<h3 class="code-line" data-line-start=2 data-line-end=3><a id="Images_of_the_Russian_Empire_2"></a>Images of the Russian Empire</h3>
+<h4 class="code-line" data-line-start=0 data-line-end=1><a id="CS19426_Project_2_0"></a>CS194-26 Project 2</h4>
+<h3 class="code-line" data-line-start=2 data-line-end=3><a id="Fun with Filters and Frequencies!"></a>Fun with Filters and Frequencies!</h3>
 <h2 class="code-line" data-line-start=4 data-line-end=5><a id="Austin_Kao_4"></a>Austin Kao</h2>
-<h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Overview</h2>
-<p class="has-line-data" data-line-start="8" data-line-end="9">The goal of this assignment is to take the digitized Prokudin-Gorskii glass plate images and, using image processing techniques, automatically produce a color image with as few visual artifacts as possible. In order to do this, one will need to extract the three color channel images, place them on top of each other, and align them so that they form a single RGB color image.</p>
-<h2 class="code-line" data-line-start=10 data-line-end=11><a id="Approach_10"></a>Approach</h2>
+  
+  
+<h2 class="code-line" data-line-start=6 data-line-end=7><a id="Overview_6"></a>Part 1: Fun with Filters</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">
+  In this section, we show the partial derivative in x and y of the cameraman image 
+  by convolving the image with finite difference operators D_x and D_y
+  </p>
+  
+  <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="cameraman.png" alt=""height="350">&lt;example image&gt;</p>
+
+  
+  
+ <h2 class="code-line" data-line-start=10 data-line-end=11><a id="Approach_10"></a>Approach</h2>
 <p class="has-line-data" data-line-start="12" data-line-end="13">I fisrt divide the image into 3 parts. Than I aligned them by calculating the gradient in the Y axis and compared the image to find an offset that’s best fitted. multiscale paramid is also used to saved runtime when the image is too big.</p>
 <h2 class="code-line" data-line-start=14 data-line-end=15><a id="Image_14"></a>Image</h2>
 <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="out_path/cathedral.jpg" alt=""height="350">&lt;br&gt;</p>
